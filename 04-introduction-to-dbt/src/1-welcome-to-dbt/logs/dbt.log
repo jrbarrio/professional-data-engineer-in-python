@@ -1,0 +1,82 @@
+[0m20:04:42.727899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0d4288cd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0d426a42b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0d4199c7f0>]}
+
+
+============================== 20:04:42.731076 | 05a5829c-493f-4891-812c-d82c8aaed4fb ==============================
+[0m20:04:42.731076 [info ] [MainThread]: Running with dbt=1.9.1
+[0m20:04:42.731592 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/jorge/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:04:42.736649 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object.. Dictionary: {'dir': PosixPath('/home/jorge/.dbt')}
+[0m20:04:42.737075 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m20:05:12.576775 [debug] [MainThread]: Starter project path: /home/jorge/.pyenv/versions/3.9.20/envs/professional-data-engineer-in-python/lib/python3.9/site-packages/dbt/include/starter_project
+[0m20:05:12.578491 [info ] [MainThread]: 
+Your new dbt project "nyc_yellow_taxi" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:05:12.578879 [info ] [MainThread]: Setting up your profile.
+[0m20:05:38.698534 [error] [MainThread]: Encountered an error:
+
+[0m20:05:38.699550 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/jorge/.pyenv/versions/3.9.20/envs/professional-data-engineer-in-python/lib/python3.9/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/jorge/.pyenv/versions/3.9.20/envs/professional-data-engineer-in-python/lib/python3.9/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/home/jorge/.pyenv/versions/3.9.20/envs/professional-data-engineer-in-python/lib/python3.9/site-packages/dbt/cli/main.py", line 477, in init
+    results = task.run()
+  File "/home/jorge/.pyenv/versions/3.9.20/envs/professional-data-engineer-in-python/lib/python3.9/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/home/jorge/.pyenv/versions/3.9.20/envs/professional-data-engineer-in-python/lib/python3.9/site-packages/dbt/task/init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "/home/jorge/.pyenv/versions/3.9.20/envs/professional-data-engineer-in-python/lib/python3.9/site-packages/dbt/task/init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "/home/jorge/.pyenv/versions/3.9.20/envs/professional-data-engineer-in-python/lib/python3.9/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/home/jorge/.pyenv/versions/3.9.20/envs/professional-data-engineer-in-python/lib/python3.9/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m20:05:38.701266 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 56.01873, "process_in_blocks": "128", "process_kernel_time": 0.046946, "process_mem_max_rss": "86292", "process_out_blocks": "80", "process_user_time": 0.880002}
+[0m20:05:38.701835 [debug] [MainThread]: Command `dbt init` failed at 20:05:38.701748 after 56.02 seconds
+[0m20:05:38.702238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0d4288cd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0d419b6d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0d4199ce80>]}
+[0m20:05:38.702633 [debug] [MainThread]: Flushing usage events
+[0m20:05:39.252728 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:06:35.336141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7009b520ad60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7009b4573dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7009b4573d60>]}
+
+
+============================== 20:06:35.338762 | 32a90478-77cf-4368-ba33-0c933d4b990e ==============================
+[0m20:06:35.338762 [info ] [MainThread]: Running with dbt=1.9.1
+[0m20:06:35.339342 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/jorge/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:06:47.984717 [debug] [MainThread]: Starter project path: /home/jorge/.pyenv/versions/3.9.20/envs/professional-data-engineer-in-python/lib/python3.9/site-packages/dbt/include/starter_project
+[0m20:06:47.986351 [info ] [MainThread]: 
+Your new dbt project "nyc_yellow_taxi" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:06:47.986739 [info ] [MainThread]: Setting up your profile.
+[0m20:06:52.612815 [info ] [MainThread]: Profile nyc_yellow_taxi written to /home/jorge/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m20:06:52.613679 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 17.32316, "process_in_blocks": "0", "process_kernel_time": 0.038991, "process_mem_max_rss": "113868", "process_out_blocks": "72", "process_user_time": 0.91679}
+[0m20:06:52.614230 [debug] [MainThread]: Command `dbt init` succeeded at 20:06:52.614151 after 17.32 seconds
+[0m20:06:52.614612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7009b520ad60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7009b45375b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7009b4573eb0>]}
+[0m20:06:52.614994 [debug] [MainThread]: Flushing usage events
+[0m20:06:53.117665 [debug] [MainThread]: An error was encountered while trying to flush usage events

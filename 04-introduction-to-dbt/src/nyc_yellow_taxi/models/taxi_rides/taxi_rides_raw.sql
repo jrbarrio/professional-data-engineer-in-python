@@ -1,0 +1,1 @@
+select * from 'yellow_tripdata_2023-01-partial.parquet'

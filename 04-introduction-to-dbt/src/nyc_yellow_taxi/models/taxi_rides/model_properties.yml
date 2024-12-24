@@ -6,8 +6,10 @@ models:
       - name: fare_amount
         tests:
           - not_null
+          - check_gt_0
       - name: payment_type
         tests:
           - not_null
+          - check_gt_0
           - accepted_values:
               values: [1, 2, 3, 4, 5, 6]

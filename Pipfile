@@ -8,6 +8,7 @@ dbt-core = "*"
 dbt-postgres = "*"
 dbt-duckdb = "*"
 pandas = "*"
+sqlalchemy = "*"
 
 [dev-packages]
 

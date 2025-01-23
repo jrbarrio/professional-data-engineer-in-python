@@ -7,4 +7,5 @@ pip install pipenv
 pipenv install dbt-core dbt-postgres dbt-duckdb
 pipenv install pandas
 pipenv install sqlalchemy
+pipenv install redis
 ```

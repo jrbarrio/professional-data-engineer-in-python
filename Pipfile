@@ -9,6 +9,7 @@ dbt-postgres = "*"
 dbt-duckdb = "*"
 pandas = "*"
 sqlalchemy = "*"
+redis = "*"
 
 [dev-packages]
 

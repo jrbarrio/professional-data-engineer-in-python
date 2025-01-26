@@ -10,6 +10,7 @@ dbt-duckdb = "*"
 pandas = "*"
 sqlalchemy = "*"
 redis = "*"
+pytest = "*"
 
 [dev-packages]
 

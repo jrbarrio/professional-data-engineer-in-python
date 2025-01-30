@@ -11,6 +11,7 @@ pandas = "*"
 sqlalchemy = "*"
 redis = "*"
 pytest = "*"
+pytest-benchmark = "*"
 
 [dev-packages]
 

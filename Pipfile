@@ -12,6 +12,7 @@ sqlalchemy = "*"
 redis = "*"
 pytest = "*"
 pytest-benchmark = "*"
+pyspark = "*"
 
 [dev-packages]
 

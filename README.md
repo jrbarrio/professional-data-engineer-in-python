@@ -10,4 +10,5 @@ pipenv install sqlalchemy
 pipenv install redis
 pipenv install pytest
 pipenv install pytest-benchmark
+pipenv install pyspark
 ```
